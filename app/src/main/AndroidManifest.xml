@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mine.noting">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/smile_handdrawn"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/smile_handdrawn"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar"> <!-- for not using app title bar-->
+
+        <!-- first launching activity -->
+        <activity android:name=".SplashActivity"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- add activity components for use-->
+        <activity
+            android:name=".ui.MainActivity"
+            android:screenOrientation="portrait"></activity>
+
+    </application>
+
+</manifest>
